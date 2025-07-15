@@ -1,0 +1,20 @@
+<div class="d-flex w-100 justify-content-center">
+    <app-head-line [Heading]="HeadLine"></app-head-line>
+</div>
+<div class="w-75 m-auto">
+    <div class="row align-items-center justify-content-between py-4 my-4 bg-sec rounded-3">
+        <div class="col-lg-3">
+            <img [src]="Education.UniversityLogoUrl" [alt]="Education.University + ' Photo'" class="w-100 rounded-3">
+        </div>
+        <div class="col-lg-8">
+            <h4 class="my-3">{{Education.Faculty}}</h4>
+            <h6 class="text-secondary">{{Education.University}}</h6>
+            <h6>{{Education.Degree}}</h6>
+            <div class="d-flex justify-content-between align-items-center w-50 my-3 flex-wrap">
+                <p class="rounded-4 px-3 py-2 bg-Main">GPA: {{Education.GPA}}</p>
+                <p>Graduation Year: <span class="text-secondary">{{Education.GraduationYear}}</span></p>
+            </div>
+            <p class="text-secondary">{{Education.Description}}</p>
+        </div>
+    </div>
+</div>

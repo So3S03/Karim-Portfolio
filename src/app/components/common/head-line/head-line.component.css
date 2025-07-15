@@ -1,0 +1,27 @@
+.special{
+    position: relative;
+}
+
+.special::before{
+    position: absolute;
+    top: 80%;
+    left: -20%;
+    content: "";
+    width: 90%;
+    height: 20px;
+    border-left: solid #fff ;
+    border-bottom: solid #fff ;
+    border-radius: 10px 10px 0 0;
+}
+
+.special::after{
+    position: absolute;
+    top: 90%;
+    right: -20%;
+    content: "";
+    width: 90%;
+    height: 20px;
+    border-right: solid #fff ;
+    border-bottom: solid #fff ;
+    border-radius: 10px 10px 0 ;
+}

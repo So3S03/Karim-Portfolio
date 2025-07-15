@@ -1,0 +1,31 @@
+<div class="d-flex w-100 justify-content-center">
+    <app-head-line [Heading]="HeadLine"></app-head-line>
+</div>
+<div class="row g-3">
+    @for (item of Projects; track $index) {
+        <div class="col-lg-4">
+            <div class="card bg-sec text-light w-100">
+                <img [src]="item.PhotoUrl" class="card-img-top" [alt]="item.Name + ' Photo'">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">{{item.Name}}</h5>
+                    <p class="card-text">{{item.Description}}</p>
+                    <div class="used-tech-group d-flex justify-content-start align-items-center flex-wrap">
+                        @for (tech of item.UsedTech; track $index) {
+                            <p class="tech bg-Main rounded-3 py-2 px-1 me-2">{{tech}}</p>
+                        }
+                    </div>
+                    <div>
+                        @if(item.SourceCodeUrl)
+                    {
+                        <a target="_blank" [href]="item.SourceCodeUrl" class="btn btn-secondary me-3">Source Code</a>
+                    }
+                    @if(item.LiveDemoUrl)
+                    {
+                        <a target="_blank" [href]="item.LiveDemoUrl" class="btn btn-outline-secondary">Live Demo</a>
+                    }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

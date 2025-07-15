@@ -1,0 +1,4 @@
+.hover-Effect:hover{
+    transition: all 0.4s;
+    color: #fff !important;
+}

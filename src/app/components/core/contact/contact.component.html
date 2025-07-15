@@ -1,0 +1,52 @@
+<div class="d-flex w-100 justify-content-center">
+    <app-head-line [Heading]="HeadLine"></app-head-line>
+</div>
+<div class="w-75 m-auto row g-3">
+    <div class=" col-md-12 col-lg-6">
+        <div class="bg-sec p-5 rounded-start-4 card-min-hight">
+            <h3 class="mb-5">Get In Touch</h3>
+            <div>
+                <div class="mb-4 contact-label">
+                    <i class="fs-3 fa-solid fa-phone me-3"></i>
+                    <a target="_blank" href="tel:+201122339429" class="link-secondary text-decoration-none">+201122339429</a>
+                </div>
+                <div class="mb-4 contact-label">
+                    <i class="fs-3 fa-solid fa-envelope me-3"></i>
+                    <a target="_blank" href="mailto:ka2001rimahmed@gmail.com" class="link-secondary text-decoration-none">Ka2001rimahmed&#64;gmail.com</a>
+                </div>
+                <div class="mb-4 contact-label">
+                    <i class="fs-3 fa-brands fa-linkedin me-3"></i>
+                    <a target="_blank" class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/karim-fathy-13a37321b/">Karim Fathy</a>
+                </div>
+                <div class="mb-5 contact-label">
+                    <i class="fs-3 fa-brands fa-facebook me-3"></i>
+                    <a target="_blank" class="link-secondary text-decoration-none" href="https://web.facebook.com/Karim.Ahmed.Fathy2001?locale=ar_AR">Karim Ahmed  Fathy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-6">
+        <div class="bg-sec p-5 rounded-end-4 card-min-hight">
+            <h3 class="mb-4">Send Mail</h3>
+            <form [formGroup]="GmailContact" (ngSubmit)="Send()">
+                <div class="mb-2">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control text-light bg-Main" id="Name" placeholder="Name" formControlName="Name">
+                </div>
+                <div class="mb-2">
+                    <label for="Email" class="form-label">Email address</label>
+                    <input type="email" class="form-control text-light bg-Main" id="Email" placeholder="name@example.com" formControlName="UserEmail">
+                </div>
+                <div class="mb-2">
+                    <label for="Subject" class="form-label">Subject</label>
+                    <input type="email" class="form-control text-light bg-Main" id="Subject" placeholder="Subject" formControlName="Subject">
+                </div>
+                <div class="mb-2">
+                    <label for="MailBody" class="form-label">Example textarea</label>
+                    <textarea class="form-control text-light bg-Main" id="MailBody" rows="4" placeholder="Message" formControlName="MailBody"></textarea>
+                </div>
+                <button class="btn btn-secondary w-100" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

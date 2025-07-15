@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=DynaPuff:wght@400..700&display=swap');
+.delius-unicase-regular {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.delius-unicase-bold {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.bg-Main {
+    background-color: #222831 !important;
+}
+.bg-sec {
+    background-color: #181d24 !important;
+}
+.text-Main
+{
+    color: #222831 !important;
+}
+.text-sec{
+    color: #181d24 !important;
+}
+body {
+    background-color: #222831 !important;
+    color: #fff !important;
+}
+
+.cursor-pointer{
+    cursor: pointer !important;
+}

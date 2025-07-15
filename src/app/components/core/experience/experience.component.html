@@ -1,0 +1,25 @@
+<div class="d-flex w-100 justify-content-center">
+    <app-head-line [Heading]="HeadLine"></app-head-line>
+</div>
+<div class="d-flex justify-content-center flex-wrap">
+    @for (item of Experties; track $index) 
+    {
+        <div class="row align-items-center justify-content-between py-4 my-4 w-100 bg-sec rounded-3 ">
+            <div class="col-lg-2">
+                <img [src]="item.CompanyLogoUrl" [alt]="item.CompanyName + ' Photo'" class="w-100 rounded-3">
+            </div>
+            <div class="col-lg-9">
+                <h4 class="my-3">{{item.CompanyName}}</h4>
+                <h6 class="text-secondary">{{item.Position}}</h6>
+                <h6>{{item.From}} - {{item.To}}</h6>
+                <p class="text-secondary">{{item.Description}}</p>
+                <div class="d-flex flex-wrap">
+                    @for (tech of item.Technologies; track $index) 
+                {
+                    <span class="p-2 me-3 rounded-5 bg-Main mb-2">{{tech}}</span>
+                }
+                </div>
+            </div>
+        </div>
+    }
+</div>

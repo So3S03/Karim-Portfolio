@@ -1,0 +1,111 @@
+.photo-Adjustment
+{
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 50% !important;
+    border: solid 4px #7d7d7d;
+    object-position: 0% 25%;
+}
+.bg-sec{
+    transition: all 0.5s;
+}
+.bg-sec:hover{
+    background-color: #121a2a !important;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) 
+{
+    .btn-grb
+    {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) 
+{
+    .btn-grb 
+    {
+        width: 100% !important;
+    }
+    .intro
+    {
+        flex-direction: column-reverse;
+        justify-content: space-evenly !important;
+    }
+    .intro-groub
+    {
+        width: 100% !important;
+    }
+    .photo-Adjustment
+    {
+        border-radius: 20px !important;
+        min-height: 500px !important;
+        width: fit-content !important;
+    }
+    .photo-container
+    {
+        width: 100% !important;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+{
+    .intro {
+        flex-direction: column-reverse;
+        justify-content: space-evenly !important;
+    }
+    .photo-Adjustment
+    {
+        border-radius: 20px !important;
+        min-height: 500px !important;
+        width: fit-content !important;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+{
+    .intro {
+        flex-direction: column-reverse;
+        margin-top: 100px !important;
+        justify-content: space-evenly !important;
+    }
+    .photo-container
+    {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .btn-grb 
+    {
+        width: 100% !important;
+    }
+        .intro-groub
+    {
+        text-align: center;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{  
+    .intro {
+        flex-direction: column-reverse;
+        margin-top: 100px !important;
+        justify-content: space-evenly !important;
+    }
+    .photo-container
+    {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .btn-grb 
+    {
+        width: 100% !important;
+    }
+    .intro-groub
+    {
+        text-align: center;
+    }
+}

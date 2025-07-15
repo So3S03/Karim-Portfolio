@@ -1,0 +1,27 @@
+.icon-style
+{
+    width: 200px;
+    height: 200px;
+    border: solid 4px;
+    border-radius: 50%;
+}
+
+.icon
+{
+    font-size: 90px !important;
+}
+
+.Erorr
+{
+    font-size: 80px;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{  
+    .btns
+    {
+        min-height: 110px !important;
+    }
+}

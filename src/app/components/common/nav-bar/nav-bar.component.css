@@ -1,0 +1,61 @@
+.nav-link{
+    position: relative !important;
+    transition: all 0.4s !important;
+    top: 0;
+    right: 0;
+    padding: .625rem;
+}
+.Nav-Prop-Movement{
+    top: -5px !important;
+}
+.navbar{
+    transition: all 0.4s;
+}
+.bg-Nav
+{
+    background-color: rgb(181, 181, 181) !important;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) 
+{
+
+}
+
+@media (min-width: 980px) and (max-width: 1199px) 
+{
+    .navbar-collapse .w-50
+    {
+        width: 75% !important;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+{
+    .Nav-Prop-Movement
+    {
+        top: 0 !important;
+        right: -10px !important;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+{
+    .Nav-Prop-Movement
+    {
+        top: 0 !important;
+        right: -10px !important;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{
+    .Nav-Prop-Movement
+    {
+        top: 0 !important;
+        right: -10px !important;
+    }
+}
